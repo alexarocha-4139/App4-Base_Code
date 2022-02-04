@@ -34,12 +34,12 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
+        var flu_count = 0;		<!--EDITED CALCULATION FUNCTION-->
         var cold_count = 0;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function fluAdd(){
+            flu_count = flu_count + 1;
 		
 
         }
@@ -51,9 +51,9 @@ blah, blah, blah, blah
 	function resultsoutput(){
 		
 		var coldPercent = (cold_count/4) * 100
-		var allergyPercent = (allergy_count/4) * 100
+		var fluPercent = (flu_count/4) * 100
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%"; <!--ADDED RESULT FUNCTION-->
+		resultText.innerHTML = "Probability it is the flu =" + fluPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%"; <!--ADDED RESULT FUNCTION-->
 	}
 	
   </script>
